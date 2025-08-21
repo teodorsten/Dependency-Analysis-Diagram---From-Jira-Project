@@ -59,6 +59,3 @@ Troubleshooting
 
 Security
 - Never commit `.env` or API tokens. Use `.env.example` only.
-
-License
-- Add a LICENSE file if you want to publish under a specific license.
