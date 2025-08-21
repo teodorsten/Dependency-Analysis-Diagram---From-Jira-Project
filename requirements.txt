@@ -1,8 +1,51 @@
-requests==2.32.4
-graphviz==0.21
-graphviz2drawio==1.1.0
-networkx==3.4.2
-lxml==6.0.0
-xmltodict==0.14.2
-pygraphviz==1.14
-numpy==2.2.6
+# jira-dad-from-szandra
+
+Purpose
+- Generate dependency diagrams from Jira issues (outputs: dad_graph.png, dad_graph.drawio, dad_mermaid.md).
+
+Quick start (Windows / conda)
+1. Clone:
+   git clone https://github.com/<OWNER>/<REPO>.git
+   cd <REPO>
+
+2. Install Graphviz (system binary):
+   - winget install --id Graphviz.Graphviz
+   - Verify: dot -V
+
+3. Create environment:
+   conda env create -f environment.yml
+   conda activate jira-diagram
+
+   OR using pip:
+   python -m venv .venv
+   .venv\Scripts\activate
+   pip install -r requirements.txt
+
+4. Configure credentials (do NOT commit):
+   - Copy .env.example -> .env and fill values, OR set environment variables:
+     PowerShell:
+       $env:JIRA_EMAIL = "you@example.com"
+       $env:JIRA_API_TOKEN = "your_token"
+       $env:JIRA_BASE_URL = "https://yourcompany.atlassian.net"
+
+5. Edit JQL if needed:
+   - Open build_dad.py and set the jql variable near the bottom:
+     jql = 'project = "ProjectName" AND fixVersion = "IterationName" ORDER BY priority DESC'
+
+6. Run:
+   python build_dad.py
+
+Outputs
+- dad_graph.png  (Graphviz)
+- dad_graph.drawio (open in https://app.diagrams.net)
+- dad_mermaid.md (Mermaid markdown)
+- dad_graph.dot (Graphviz dot source)
+
+Troubleshooting
+- If Graphviz rendering fails: run `dot -Tpng dad_graph.dot -o test.png` to inspect errors.
+- If pygraphviz installation fails on Windows, run:
+  conda install -c conda-forge pygraphviz
+- Never commit .env or API tokens.
+
+License
+- Add LICENSE file as needed.
