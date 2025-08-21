@@ -17,7 +17,7 @@ Purpose
 
 Quick start (Windows / conda)
 1. Clone:
-   - git clone https://github.com/<OWNER>/<REPO>.git
+   - git clone https://github.com/teodorsten/Dependency-Analysis-Diagram---From-Jira-Project.git
    - cd <REPO>
 
 2. Install Graphviz (system binary)
