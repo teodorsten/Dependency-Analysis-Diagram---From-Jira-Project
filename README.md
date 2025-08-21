@@ -11,7 +11,7 @@ Clone → install Graphviz → create env (conda or pip) → set JIRA_* env vars
 Purpose
 - Generate dependency diagrams from Jira issues. Outputs:
   - dad_graph.png (Graphviz)
-  - dad_graph.drawio (draw.io / diagrams.net)
+  - dad_graph.drawio (draw.io / diagrams.net - editable diagram)
   - dad_mermaid.md (Mermaid markdown)
   - dad_graph.dot (Graphviz DOT source)
 
