@@ -1,8 +1,17 @@
-# Copy to .env or export these environment variables in your shell before running.
-JIRA_EMAIL=you@example.com
-JIRA_API_TOKEN=your_api_token_here
-JIRA_BASE_URL=https://yourcompany.atlassian.net
-
-# Optional
-JIRA_FLAGGED_CF=customfield_10200
-JIRA_DEPENDENCY=
+name: jira-diagram
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - graphviz                # dot-binary
+  - python-graphviz         # python-binding från conda-forge
+  - lxml
+  - pip
+  - pip:
+    - requests==2.32.4
+    - graphviz==0.21
+    - graphviz2drawio==1.1.0
+    - networkx==3.4.2
+    - xmltodict==0.14.2
+    - pygraphviz==1.14
+    - numpy==2.2.6
