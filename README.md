@@ -43,6 +43,7 @@ Quick start (Windows / conda)
        $env:JIRA_BASE_URL = "https://yourcompany.atlassian.net"
        ```
    - Required: JIRA_EMAIL, JIRA_API_TOKEN, JIRA_BASE_URL
+   - In build_dad.py ctrl+f "https://companyname.atlassian.net" and change to your domain name
 
 5. Edit JQL if needed
    - Open `build_dad.py` and change the `jql` variable near the bottom to select issues.
