@@ -17,4 +17,4 @@ In the file build_dad.py replace these variables with your own credentials:
 
 ...where "JIRA_BASE_URL" is https://companyname.atlassian.net
 
-Also, replace all "companyname" with your domain name.
+Also, replace all "companyname" with your domain name at Atlassian.
