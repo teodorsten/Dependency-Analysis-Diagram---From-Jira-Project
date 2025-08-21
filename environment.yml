@@ -3,8 +3,8 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - graphviz                # dot-binary
-  - python-graphviz         # python-binding från conda-forge
+  - graphviz                # provides dot binary
+  - python-graphviz         # Python binding (conda)
   - lxml
   - pip
   - pip:
