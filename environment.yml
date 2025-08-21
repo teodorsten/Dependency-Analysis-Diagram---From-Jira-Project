@@ -1,0 +1,8 @@
+# Copy to .env or export these environment variables in your shell before running.
+JIRA_EMAIL=you@example.com
+JIRA_API_TOKEN=your_api_token_here
+JIRA_BASE_URL=https://yourcompany.atlassian.net
+
+# Optional
+JIRA_FLAGGED_CF=customfield_10200
+JIRA_DEPENDENCY=
