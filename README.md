@@ -25,7 +25,7 @@ Also, replace all "companyname" with your domain name at Atlassian.
 
 
 
-# jira-dad-from-szandra
+#
 
 Purpose
 - Generate dependency diagrams from Jira issues. Outputs:
