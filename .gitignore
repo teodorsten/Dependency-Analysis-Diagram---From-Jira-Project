@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.vscode/
+.idea/
+dist/
+build/
+*.egg-info/
+dad_graph.png
+dad_graph.dot
+dad_graph.drawio
+dad_mermaid.md
