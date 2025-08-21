@@ -1,6 +1,6 @@
 # Dependency-Analysis-Diagram---From-Jira-Project
 
-**Follow the step-by-step guide below to create an editable DAD from a Jira project.**
+**Follow the step-by-step guide below to create an editable DAD from any Jira project.**
 
 #
 
